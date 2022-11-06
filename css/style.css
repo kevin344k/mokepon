@@ -1,0 +1,212 @@
+@import url("https://fonts.googleapis.com/css2?family=Inconsolata:wght@200&family=Permanent+Marker&display=swap");
+
+@import url("//db.onlinewebfonts.com/c/f4d1593471d222ddebd973210265762a?family=Pokemon");
+@import url("https://fonts.googleapis.com/css2?family=Fredoka+One&family=Inconsolata:wght@200&family=Permanent+Marker&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Fredoka+One&family=Inconsolata:wght@200&family=Permanent+Marker&family=Poppins:wght@200&family=Roboto+Mono&display=swap");
+
+body {
+  font-family: "Fredoka One", cursive;
+  background: -webkit-linear-gradient(to right, #ad5389, #3c1053);
+  background: linear-gradient(to right, #ad5389, #3c1053);
+  /* margin: 0; */
+}
+
+#seleccinar_mascota {
+  /* z-index: 3; */
+  /* position: absolute; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* height: 100vh;
+  width: 100vw; */
+  align-items: center;
+}
+
+#titulo {
+  color: #ffeb3b;
+  font-size: 55px;
+  font-family: "Pokemon";
+  letter-spacing: 10px;
+  -webkit-text-stroke: 2px #1976d2;
+  font-style: oblique;
+}
+
+.subtitulo {
+  color: white;
+  font-size: 20px;
+}
+
+.tarjetas {
+  display: flex;
+  gap: 10px;
+}
+
+.tarjeta-de-mokepo {
+  width: 180px;
+  height: 180px;
+  padding: 10px;
+  background-color: #fafafa;
+  box-sizing: border-box;
+  border: 1px solid rgb(192, 41, 14);
+  border-radius: 18px;
+  display: flex;
+  /* flex-direction: column; */
+  align-items: center;
+  font-family: "Poppins", sans-serif;
+  letter-spacing: 2px;
+  justify-content: center;
+}
+
+/* .poke{
+  position: absolute;
+ 
+  height: 160px;
+  opacity: 0.09;
+  z-index: 1;
+} */
+
+.tarjeta-de-mokepo img {
+  width: 80px;
+  /* z-index: 3; */
+}
+
+input {
+  display: none;
+}
+input:checked + label{
+
+  background-color: #FFF9CA;
+}
+#boton-mascotas {
+  width: 180px;
+  height: 60px;
+  border: 2px solid #f57328;
+  background-color: transparent;
+
+  margin-top: 60px;
+
+  border-radius: 25px;
+  font-family: "Pokemon";
+  color: white;
+  font-size: 25px;
+  letter-spacing: 4px;
+}
+#botones {
+  display: flex;
+  gap: 20px;
+}
+
+#seleccionar_ataque {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  /* z-index: 3; */
+
+  /* position: absolute; */
+}
+
+.boton-ataques {
+  background-color: #1976d2;
+  border-radius: 20px;
+  border: transparent;
+  width: 150px;
+  padding: 10px;
+  box-sizing: border-box;
+  color: white;
+  font-family: "Roboto Mono", monospace;
+  font-size: 20px;
+}
+#boton-agua:hover {
+  background-color: #ffffff;
+  color: #1976d2;
+  box-shadow: 0px 0px 7px 7px #0a7fe5;
+}
+#boton-fuego:hover {
+  background-color: #f9a825;
+  box-shadow: 0px 0px 7px 7px #e65100;
+}
+
+#boton-tierra:hover {
+  background-color: #774f0ee2;
+  box-shadow: 0px 0px 7px 7px #6a471e;
+}
+
+#divArena {
+  background-image: url(/assets/campo.jpg);
+  width: 400px;
+  height: 500px;
+  max-height: 500px;
+  margin-top: 50px;
+
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+}
+#mensajes {
+  background-color: white;
+  width: 100px;
+  padding: 10px;
+  border-radius: 20px;
+  font-size: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#ataques {
+  display: grid;
+  grid-template-columns: 100px 100px;
+}
+
+#boton-reiniciar {
+  border: none;
+  color: white;
+  background-color: #e74c3c;
+  /* box-shadow: 0px 0px 7px 7px   #df644b; */
+  padding: 10px;
+  width: 90px;
+  border-radius: 20px;
+}
+
+/* .video {
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  z-index: 2;
+
+
+overflow: hidden;
+background-size: cover;
+
+}
+video {
+width: fit-content;
+height: fit-content;
+
+} */
+
+.ataques-jugador, .ataques-enemigo{
+display: flex;
+flex-direction: column;
+align-items: center;
+}
+
+
+
+@media (max-width: 360px) {
+  .tarjetas {
+    flex-direction: column;
+  }
+}
+@media (max-width: 360px) {
+  #botones {
+    flex-direction: column;
+  }
+  #divArena {
+    width: 300px;
+  }
+}
